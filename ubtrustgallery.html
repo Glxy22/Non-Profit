@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>UT Gallery</title>
+    <link href="images/karachi.mp4">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!--footer files-->
+<script src="https://kit.fontawesome.com/17561b0659.js" crossorigin="anonymous"></script>
+
+
+<style type="text/css">
+          body{
+        background-color: whitesmoke;
+        box-sizing: border-box;
+
+      }
+      .dir{
+        background-color:#738D8E ;
+
+    }
+      header{
+        clear: both;
+      }
+      main{
+        margin-top:20% ;
+        padding: 2%;
+      }
+      .carousel-control-next {
+    
+    background-color: #73CBE7;
+  }
+  .carousel-inner{
+    margin-top: 1%;
+  }
+  .carousel-control-prev {
+    
+    background-color: #73CBE7;
+  }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .logo {
+        width: 30%;
+    Height: 30%;
+    /*padding: 2px;*/
+    margin:20px;
+
+    border: 1px solid #808080;
+  border-radius: 4px;
+      }
+      .caimg1{
+        width: 100%;
+        height: 100%;
+      }
+      .para{
+        color: black;
+      }
+      .imgflood{
+        width: 50%;
+    Height: 50%;
+    padding: 2px;
+    margin:auto;
+
+
+    border: 1px solid #808080;
+  border-radius: 4px;
+   
+
+      }
+      .secondsection-img2:hover{
+        border: 1px solid #808080;
+        border-radius: 8px;
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  
+      }
+      .last-three-img{
+        border-radius: 15px;
+        padding: 3px;
+        border: solid 2px black;
+
+      }
+      .bd-placeholder-img{
+        align-content: center;
+      }
+      .column {
+  
+  width: 30.33%;
+  padding: 5px;
+
+}
+.column2{
+  
+  display: inline-block;
+  padding: 5%;
+}
+.row{
+  margin: 10px;
+  
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+.row{
+  margin: 10px;
+  margin: 0, auto;
+  align-content: center;
+}
+
+.secondsection-para{
+  float: left;
+  width: 60%;
+}
+.secondsection-img {
+  width: 35%;
+  height: 35%;
+}
+.secondsection-img-left{
+  width: 35%;
+  float: left;
+}
+.secondsection-para-right{
+  width: 50%;
+  float: right;
+}
+.title{
+  font-size: 100%;
+  color: whitesmoke;
+  stroke: coral;
+  font-family: Georgia,sans-serif, serif ;
+}
+.heading{
+    text-align:center;
+}
+@media only screen and (max-width: 500px) {
+
+  .column .secondsection-para{
+    background-color: lightblue;
+    width: 100%;
+    clear: both;
+    overflow: auto;
+
+
+  }
+  .topthreeimg .rip{
+      width: 100%;
+      display: block;
+      clear: both;
+    }
+}
+.zoom:hover{
+  transform: scale(1.3);
+}
+h1{
+    padding: 1%;
+
+}
+
+h3 {
+    text-align: center;
+}
+/*footer files*/
+h5{
+  color:  #00cccc;
+  font-weight: bold;
+}
+.site-footer{
+  background-color: #6E7D7D;
+}
+ 
+.site-footer-bottom{
+  background-color: #698D8E;
+}
+footer a{
+  color: white; !important
+}
+.bottom{
+  padding: 1%;}
+  .nav-link:hover{
+  background-color: #C2DCC9;
+  
+  border: 2px solid #7E9083;
+  border-radius: 8px; 
+  color: #3B433D;
+}
+
+</style>
+</head>
+<body>
+     <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="ubtrustaboutus.html"><img class="logo" src="images/logo.jpg" alt=" logo of Ubqari Trust"  ><P class="title"> UBQARI TRUST</P></a>
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="ubhome.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="ubtrustaboutus.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="utprojects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="ubtrustgallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Donate.html">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+    <!-- Images Gallery-->
+
+<!--<div class="topthreeimg">-->
+   <div class="rip column heading"> <h1> IMAGE GALLERY</h1>
+    <p> For videos please visit the link below</p></div>
+   <hr>
+
+<div class="row">
+  <div class="column rip">
+    <div><img class=" zoom imgflood img-thumbnail" src="images/D1.jpg" style="width:100%" alt="flood relief in Pakistan, image"> </div>
+   <h4 class="fw-normal">Checks Handover by UT Team</h4>
+       
+    <!--second Image-->
+  </div>
+  <div class="column rip">
+    <div><img class=" zoom imgflood img-thumbnail" src="images/D3.jpg" style="width:100%" alt="Health care provided by Ubqari, image">
+    </div>
+    <h4 class="fw-normal">Monthly Donation Distribution</h4>
+       
+<!--third image-->
+  </div>
+  <div class="column rip">
+    <div>
+    <img class=" zoom imgflood img-thumbnail" src="images/pic-housing.jpg" style="width:100%" alt="Education and housing provided by Ubqari, image">
+    </div>
+  <h4 class="fw-normal">Assistance provided by UT Trust</h4>
+      
+    </div> 
+</div>
+<!--</div>
+<hr class="featurette-divider">-->
+
+<!--Second section 3 images-->
+
+
+
+<div class="row">
+  <div class="column rip">
+    <div><img class=" zoom imgflood img-thumbnail" src="images/D4.jpg" style="width:100%" alt="flood relief in Pakistan, image"> </div>
+   <h4 class="fw-normal">Sheikh ul Wazaif Monitor All UT Trust Activities</h4>
+       
+    <!--second Image-->
+  </div>
+  <div class="column rip">
+    <div><img class=" zoom imgflood img-thumbnail" src="images/D5.jpg" style="width:100%" alt="Health care provided by Ubqari, image">
+    </div>
+    <h4 class="fw-normal">Micilineous Distrbution by Truckload </h4>
+       
+<!--third image-->
+  </div>
+  <div class="column rip">
+    <div>
+    <img class=" zoom imgflood img-thumbnail" src="images/D6.jpg" style="width:100%" alt="Education and housing provided by Ubqari, image">
+    </div>
+  <h4 class="fw-normal">Micilineous Distrbution by Truckload</h4>
+      
+    </div> 
+</div>
+<hr>
+<div>
+    <h1>VIDEO GALLERY</h1>
+<a href="utprojects.html"> <b>Video Gallery</b></a></div>
+
+
+</main>
+
+<!--FOOTER-->
+ <footer class="site-footer">
+            <div class="container">
+                <div class=" bottom row">
+                    <div class="col-lg-3 col-12 mb-4">
+                        <img src="images/logo.jpg" class="logo img-fluid" alt="">
+                        <div><h5 class="site-footer-title">Ubqari Trust</h5></div>
+                        <p class="text-white d-flex">A non-profit organization</p>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <h5 class="site-footer-title mb-3">Quick Links</h5>
+
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item"><a href="ubtrustaboutus.html" class="footer-menu-link">About us</a></li>
+                            <li class="footer-menu-item"><a href="utprojects.html" class="footer-menu-link">Projects</a></li>
+
+                            <li class="footer-menu-item"><a href="ubtrustgallery.html" class="footer-menu-link">Gallery</a></li>
+
+                            
+
+                            <li class="footer-menu-item"><a href="#contact" class="footer-menu-link">Become a volunteer</a></li>
+
+                            <li class="footer-menu-item"><a href="Donate.html" class="footer-menu-link">Make a Donation</a></li>
+                            <li class="footer-menu-item"><a href="#contact" class="footer-menu-link">Contact us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mx-auto " id="contact">
+                        <h5 class="site-footer-title mb-3 link">Contact Infomation</h5>
+
+                        <p class="text-white d-flex mb-2">
+                            <i class="bi-telephone me-2"></i>
+
+                            <a href="tel: +9203438710009" class="site-footer-link link">
+                                +9203438710009, +92-42-37425803
+                                    <li style="list-style: none;">+92-42-37425802,                                   +92-42-37425801</li>
+                                </ul>
+                            </a>
+                        </p>
+
+                        <p class=" link text-white d-flex">
+                            <i class="bi-envelope me-2"></i>
+
+                            <a href="mailto:contact@ubqari.org" class="site-footer-link">
+                                Email:contact@ubqari.org
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex mt-3">
+                            <i class="bi-geo-alt me-2"></i>
+                            Ubqari, Internation Center of Peace and Spirituality, Quartaba Chowk, Mazang Chungi, Lahore, Pakistan.
+                        </p>
+
+                        <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=207695144395595941160.0004ba649673c2cbeff25&amp;hl=en-GB&amp;ie=UTF8&amp;t=m&amp;source=embed&amp;ll=31.548853,74.316587&amp;spn=0.005486,0.008572&amp;z=17&amp;output=embed" class="custom-btn btn mt-3 dir" target="-blank"><b>Get Direction</b></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer-bottom bottom">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <p class="copyright-text mb-0">Copyrights © 2022 . All rights reserved. Designed by Ubqari Team. <a href="https://ubqari.org/">Click here to visit</a> <b> Ubqari.org</b>
+                            </p>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto ">
+                            <div>
+                                    <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="https://twitter.com/Ubqari?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="social-icon-link bi-twitter" target="-blank" role="button"><i class="fab fa-twitter"></i></a>
+
+                                </div>
+                                <div>
+
+                                
+                                    <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="https://www.facebook.com/ubqaritrustofficial" target="-blank" role="button"><i class="fab fa-facebook-f"></i></a>
+
+                                    </a>
+                                </div>
+
+                              <div>                               
+
+                                    <a class="btn btn-primary btn-floating m-1" style="background-color: #F31440;" href="https://www.youtube.com/c/UbqariTrust" target="-blank" role="button"><i class="fab fa-youtube"></i></a>
+
+                                    </a>
+                                </div>
+                            
+                              
+                                
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+  
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/counter.js"></script>
+        <script src="js/custom.js"></script>
+        
+  
+       
+</body></html>
